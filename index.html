@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script  type="text/javascript" src="book.js" defer></script>
+    <title>Library</title>
+</head>
+<body id="main_container"style="background-color:salmon;text-align:center"></body>
+<div id="libtitle">Maurot0p's Library!</div>
+<button id="addbook">ADD NEW BOOK</button>
+<div class="bigcontainer" id="blur"> 
+    <div class="book">
+        <div id="box_container">
+            <div id="booktitle"></div>
+        </div>
+        <div id="box_container">
+            <div id="bookauthor"></div>
+        </div>
+        <div id="box_container">
+            <div id="bookpages"></div>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round">
+                <span class="on">Read</span>
+                <span class="off">Unread</span>
+            </span>
+          </label>
+        <button id="remove">Remove</button>
+    </div>
+</div>
+<div id="container">
+    <form id='myForm'>
+        <label for="title">Book Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author">
+        <label for="pages">Number of pages:</label><br>
+        <input type="number" id="pages" name="pages">
+        <label for="read">Have you read this book?</label><br>
+        <input type="checkbox" id="read" name="read">
+      </form>
+    <button id="submit">Submit</button>
+</div>
+</body>
+</html>
